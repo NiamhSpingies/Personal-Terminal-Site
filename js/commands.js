@@ -1,8 +1,6 @@
-var github = "https://github.com/NiamhSpingies"
+var github = "https://github.com/NiamhSpingies";
 var email = 'mailto:niamhspingies@gmail.com';
 var linkedin = "https://www.linkedin.com/in/niamh-spingies/";
-
-
 
 help = [
     "<br>",
@@ -12,7 +10,7 @@ help = [
     '<span class="command">email</span>          Do not email me',
     '<span class="command">clear</span>          Clear terminal',
     "<br>",
-  ];
+];
   
 
 about = [
@@ -27,7 +25,6 @@ projects = [
 "Still curating... most projects are offline, on GitHub, or confidential.",
 "<br>"
 ];
-
 
 
 banner = [

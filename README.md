@@ -14,15 +14,9 @@ The interace will be a simple landing-page with a terminal central interface.
 The commands [
     help
     about
-    git 
+    projects
     email
     -cv
     sudo 
+
 ]
-
-# Main body functionality
-
-The primary functionality of the program in JS 
-OPP a class commands and a functional handeling index
-
-My website works off a response and request protacal the client manually selects the command and the SQLlite-database responds with an appropriate response that is handled by the Commands class. This relays a json object {command : response}

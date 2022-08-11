@@ -1,21 +1,21 @@
 body {
-    margin: 0;
+    margin-top: 10%;
     padding: 15px 20px;
     min-height: 99%;
     width: 100%;
     min-width: 550px;
-    color: #03C4A1;
-    background: #0F0E0E;
+    color: #64ffda;
+    background: #000000;
     font-family: cursor, monospace;
     overflow-x: hidden;
   }
   ::selection {
     color: #211830;
-    background-color: #519975;
+    background-color: #64ffda;
   }
   ::-moz-selection {
     color: #211830;
-    background-color: #519975;
+    background-color: #64ffda;
   }
   textarea {
     left: -1000px;
@@ -25,7 +25,6 @@ body {
     font-weight: bold;
     text-decoration: underline;
   }
-  /* Cursor Start */
   .cursor {
     font-size: 12px;
     color: #73ABAD;
@@ -52,8 +51,9 @@ body {
   #command {
     cursor: text;
     height: 50px;
-    color: #73ABAD;
+    color: #64ffda;
   }
+
   #liner {
     line-height: 1.3em;
     margin-top: -2px;
@@ -61,9 +61,10 @@ body {
     animation-delay: 1.2s;
     opacity: 0;
   }
+
   #liner::before {
-    color: #519975;
-    content: "ns_terminal:~$";
+    color: #64ffda;
+    content: "visitor@ns_terminal:~$";
   }
  
   @keyframes show {
@@ -74,10 +75,10 @@ body {
       opacity: 1;
     }
   }
-  /* Cursor End */
+
   p {
     display: block;
-    line-height: 1.3em;
+    line-height: 1.2em;
     margin: 0;
     overflow: hidden;
     white-space: nowrap;
@@ -85,6 +86,7 @@ body {
     letter-spacing: 0.05em;
     animation: typing 0.5s steps(30, end);
   }
+  
   .no-animation {
     animation: typing 0 steps(30, end);
   }
@@ -100,24 +102,20 @@ body {
     }
   }
   .index {
-    color: #DCDCCC;
+    color: #64ffda;
   }
+  /* header */
   .color2 {
-    color: #04c6e0;
+    color: #46526d;
   }
+
   .command {
-    color: #73ABAD;
-    text-shadow: 0 0 5px #73ABAD; 
+    color: #46526d;
   }
-  .error {
-    color: #a18595;
-  }
-  .white {
-    color: #fff;
-  }
+  
   .inherit,
   a {
-    color: #9C8394;
+    color: #46526d;
   }
   a {
     text-decoration: inherit;

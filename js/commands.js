@@ -6,9 +6,10 @@ help = [
     "<br>",
     '<span class="command">about</span>          Who is Niamh?',
     '<span class="command">projects</span>       View coding projects',
-    '<span class="command">help</span>           Need some assistance?',
-    '<span class="command">email</span>          Do not email me',
+    '<span class="command">help</span>           List of accepted commands',
+    '<span class="command">email</span>          Send me an email directly',
     '<span class="command">clear</span>          Clear terminal',
+    '<span class="command">history</span>        Terminal command history',
     "<br>",
 ];
   
@@ -28,6 +29,7 @@ projects = [
 
 
 banner = [
-    '<span class="color2">Welcome to my interactive web terminal.</span>',
+    '<span class="color2">Welcome to my personal terminal.</span>',
     "<span class=\"color2\">For a list of available commands, type</span> <span class=\"command\">'help'</span><span class=\"color2\">.</span>",
+    "<br>",
 ];

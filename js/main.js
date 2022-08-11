@@ -30,7 +30,7 @@ function enterKey(e) {
   if (e.keyCode == 13) {
     commands.push(command.innerHTML);
     git = commands.length;
-    addLine("ns_terminal:~$ " + command.innerHTML, "no-animation", 0);
+    addLine("visitor@ns_terminal:~$" + command.innerHTML, "no-animation", 0);
     commander(command.innerHTML.toLowerCase());
     command.innerHTML = "";
     textarea.value = "";
@@ -69,6 +69,11 @@ function commander(cmd) {
             addLine("Opening email...", "color2", 0);
             newTab(email);
             break;
+          case "history":
+            addLine("<br>", "", 0);
+            loopLines(commands, "color2", 80);
+            addLine("<br>", "command", 80 * commands.length + 50);
+            break;
         case '-cv':
             addLine("Downloading Niamh Spingies CV...", "color2", 0);
             downloading();
@@ -78,6 +83,7 @@ function commander(cmd) {
           terminal.innerHTML = '<a id="before"></a>';
           before = document.getElementById("before");
         }, 1);
+        break;
         default:
           addLine("<span class=\"inherit\">Command not found. For a list of commands, type <span class=\"command\">'help'</span>.</span>", "error", 100);
           break;

@@ -1,35 +1,40 @@
-var github = "https://github.com/NiamhSpingies";
+var github = 'https://github.com/NiamhSpingies';
 var email = 'mailto:niamhspingies@gmail.com';
-var linkedin = "https://www.linkedin.com/in/niamh-spingies/";
+var linkedin = 'https://www.linkedin.com/in/niamh-spingies/';
 
 help = [
-    "<br>",
-    '<span class="command">about</span>          Who is Niamh?',
-    '<span class="command">projects</span>       View coding projects',
     '<span class="command">help</span>           List of accepted commands',
-    '<span class="command">email</span>          Send me an email directly',
-    '<span class="command">clear</span>          Clear terminal',
-    '<span class="command">history</span>        Terminal command history',
-    "<br>",
+    '<span class="command">about</span>          Who is Niamh?',
+    '<span class="command">git</span>            View my coding projects',
+    '<span class="command">-cv</span>            Download a pdf copy of my resume',
+    '<span class="command">email</span>          Send me a direct email',
+    '<span class="command">clear</span>          Clear the terminal',
+    '<span class="command">history</span>        Terminal session command history',
 ];
-  
-
+ 
 about = [
-"<br>",
-"Hey, I'm Niamh",
-"I'm a software engineering student",
-"<br>"
+"Hello! I'm Niamh.",
+"I built this application. Currently I am completing my",
+"studies as a software engineering student at <a href='https://www.wethinkcode.co.za/?_ga=2.188593899.2132421069.1660482260-557403604.1660482260', type='_blank'>WeThinkCode_</a>.",
+"I am comefortable across stack, with a preference to backend.",
+"As I aspire to environments with performance driven cultures, ",
+"placing emphesis on continuous growth and learning.",
 ];
 
-projects = [
-"<br>",
-"Still curating... most projects are offline, on GitHub, or confidential.",
-"<br>"
+gitbio = [
+"I am still curating my technical portfolio...",
+"Most projects are offline, on GitHub, or confidential.",
 ];
 
+error = [
+"error : command not recognised",
+"For a list of commands type 'help'"
+]
 
 banner = [
-    '<span class="color2">Welcome to my personal terminal.</span>',
-    "<span class=\"color2\">For a list of available commands, type</span> <span class=\"command\">'help'</span><span class=\"color2\">.</span>",
+    "<br>",
+    "Welcome to my personal terminal site.",
+    "For a list of available commands, type 'help'.",
     "<br>",
 ];
+

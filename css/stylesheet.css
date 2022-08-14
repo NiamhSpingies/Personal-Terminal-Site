@@ -107,6 +107,7 @@ body {
   /* header */
   .color2 {
     color: #46526d;
+    margin-left: 20px;
   }
 
   .command {
@@ -115,15 +116,19 @@ body {
   
   .inherit,
   a {
-    color: #46526d;
+    color: #73ABAD;
   }
   a {
     text-decoration: inherit;
   }
   a:hover {
-    background: #73ABAD;
-    color: #211830;
+    color:#64ffda;
+    animation: forwards;
   }
   a:focus {
     outline: 0;
+  }
+  .banner{
+    color: #46526d;
+    font-size: medium;
   }

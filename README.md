@@ -28,4 +28,7 @@ dots light up one by one
 once the dots have light up 
 load
 
+<!-- scroll up when enter -->
+
+
 # Gamification

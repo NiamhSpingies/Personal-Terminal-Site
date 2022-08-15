@@ -40,6 +40,9 @@ banner = [
 ];
 
 theme = [
-    '<span>dark</span>           black and cyan',
-    '<span>midnight</span>       deep blue and cyan'
+    "<li><span>dark</span>           black and cyan</li>",
+    "<li><span>midnight</span>       deep blue and cyan</li>",
+
+    // '<span>dark</span>           black and cyan',
+    // '<span>midnight</span>       deep blue and cyan'
 ]

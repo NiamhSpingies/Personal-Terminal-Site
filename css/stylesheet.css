@@ -125,3 +125,8 @@
   margin-top: 2px;
   margin-bottom: 2px;
 }
+
+li{
+  list-style: none;;
+  margin: 0;
+}

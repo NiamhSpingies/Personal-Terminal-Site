@@ -16,7 +16,7 @@ command.innerHTML = textarea.value;
 /**
  * 
  * @param {*} e 
- * Running terminal update : commands added to history
+ * Running terminal update : key interaction
  * 
  */
 function enterKey(e) {
@@ -90,7 +90,7 @@ function commands(cmd) {
       }, 1);
       break;
     case'theme':
-      loopLines(theme, 'primary ', 80);
+      loopLines(theme, 'primary', 80);
       break;
     case'dark':
       addLine("...Loading DarkTheme",'primary', 0);
@@ -124,7 +124,8 @@ function addLine(text,style, time) {
     if (text.charAt(i) == " " && text.charAt(i + 1) == " ") {
       t += "&nbsp;&nbsp;";
       i++;
-    } else {
+    } else {  var style = "primary";
+
       t += text.charAt(i);
     }
   }
@@ -152,7 +153,6 @@ function loopLines(name,style,time) {
 function download(file){
   window.open(file);
 }
-
 
 /*
 * Displaying header

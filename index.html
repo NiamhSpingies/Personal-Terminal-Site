@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Niamh Spingies | Terminal </title>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css" >
+    <link rel="stylesheet" type="text/css" id="themes" href="css/themes/dark.css" >
   </head>
-  <body>
+
+  <body class = "terminalContainer">
     <div id="terminal">
       <a id="before"></a>
     </div>
@@ -22,10 +24,12 @@
         onkeypress="typeIt(this, event);"
         autofocus
       ></textarea>
+
       <div id="liner">
         <span id="typer"></span><b class="cursor" id="cursor">█</b>
       </div>
     </div>
+    <script src="js/theme.js"></script>
     <script src="js/caret.js"></script>
     <script src="js/commands.js"></script>
     <script src="js/main.js"></script>

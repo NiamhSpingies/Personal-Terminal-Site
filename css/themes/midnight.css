@@ -1,0 +1,57 @@
+/* LIGHT THEME SPECIFICATIONS */
+
+
+:root {
+    --back-color: #06283D;
+    --primary-color: #F2EBE9;
+    --secondary-color: #5A8F7B;
+    --curser-color: #46526d;
+    --highlight-color: #000000;
+}
+
+.terminalContainer{
+    background-color: var(--back-color);
+    color: var(--secondary-color);
+}
+
+.primary{
+    color: var(--primary-color);
+}
+
+.secondary{
+    color: var(--secondary-color);
+}
+
+.highlight{
+    color: var(--highlight-color);
+
+}  
+
+.curser{
+    color: var(--curser-color);
+}
+
+.banner{
+    color: var(--primary-color);    
+    font-size: medium;
+}
+
+.index {
+    color: var(--secondary-color);
+}
+
+.command {
+    color: var(--primary-color);  
+}
+
+a {
+    color: var(--secondary-color);
+}
+a:hover {
+    color: var(--secondary-color);
+} 
+
+::selection {
+    color:   var(--hightlight-color);
+    background:var(--secondary-color);
+  }

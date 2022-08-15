@@ -20,3 +20,12 @@ The commands [
     sudo 
 
 ]
+
+# Loader 
+
+a simple three dots after loading (loading...)
+dots light up one by one 
+once the dots have light up 
+load
+
+# Gamification

@@ -1,0 +1,58 @@
+/* DARK THEME SPECIFICATIONS */
+
+:root {
+    --back-color: #000000;
+    --primary-color: #46526d;
+    --secondary-color: #64ffda;
+    --curser-color: #73ABAD;
+    --highlight-color: #fff;
+}
+
+.terminalContainer{
+    background-color: var(--back-color);
+    color: var(--secondary-color);
+}
+    
+.primary{
+    color: var(--primary-color);
+}
+
+.secondary{
+    color: var(--secondary-color);
+}
+
+.highlight{
+    color: var(--highlight-color);
+
+}  
+
+.curser{
+    color: var(--curser-color);
+    background-color:  var(--curser-color);
+}
+
+.banner{
+    color: var(--primary-color);
+    font-size: medium;
+}
+
+.index {
+    color:var(--secondary-color);
+}
+
+.command {
+    color: var var(--primary-color);
+}
+
+a {
+    color: var(--secondary-color);
+}
+a:hover {
+    color: var(--secondary-color);
+} 
+
+
+::selection {
+    color:  var(--back-color);
+    background: var(--secondary-color);
+  }

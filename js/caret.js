@@ -1,9 +1,9 @@
-
-
+// returns the type of id needed
 function $(elid) {
     return document.getElementById(elid);
-  }
+}
   
+// curser stylewhen window is loaded 
 var cursor;
 window.onload = init;
 
@@ -12,7 +12,7 @@ function init() {
   cursor.style.left = "0px";
 }
 
-function nl2br(txt) {
+function output(txt) {
   return txt.replace(/\n/g, '');
 }
 
@@ -20,9 +20,7 @@ function typeIt(from, e) {
   e = e || window.event;
   var w = $("typer");
   var tw = from.value;
-  if (!pw){
-    w.innerHTML = nl2br(tw);
-  }
+  w.innerHTML = output(tw);
 }
 
 function moveIt(count, e) {
@@ -35,6 +33,6 @@ function moveIt(count, e) {
   }
 }
 
-function alert(txt) {
-  console.log(txt);
-}
+// function alert(txt) {
+//   console.log(txt);
+// }

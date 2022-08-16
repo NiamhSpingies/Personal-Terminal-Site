@@ -32,7 +32,7 @@
 }
 
 .banner{
-    color: var(--primary-color);    
+    color:#F2EBE9;    
     font-size: medium;
 }
 
@@ -54,4 +54,4 @@ a:hover {
 ::selection {
     color:  var(--hightlight-color);
     background:var(--secondary-color);
-  }
+}

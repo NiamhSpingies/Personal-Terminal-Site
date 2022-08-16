@@ -32,13 +32,11 @@
 
   /* Curser */
   .cursor {
-    font-size: 11px;
-    /* color: #73ABAD;
-    background-color: #73ABAD; */
+    font-size: 16px;
     position: relative;
     opacity: 1;
-    height: 1.5em;
-    width: 19px;
+    height: 1em;
+    width: 10px;
     max-width: 10px;
     transform: translateY(4px);
     overflow: hidden;
@@ -54,8 +52,7 @@
     }
   }
 
-
-  /*Command */
+  /*Command prompt*/
   #command {
     cursor: text;
     height: 50px;
@@ -82,12 +79,10 @@
       opacity: 1;
     }
   }
-  
-  /* liner */
+  /* linerprimary */
   .no-animation {
     animation: typing 0 steps(30, end);
   }
-
   @keyframes typing {
     from {
       width: 0;
@@ -105,11 +100,16 @@
     white-space: nowrap;
     margin: 0;
     letter-spacing: 0.05em;
-    animation: typing 0.5s steps(30, end);
+    animation: typing 0.3s steps(30, end);
   }
 
+.banner{
+  font-size: medium;
+  padding: 0%;
+  margin: 0%;
+}
 
-  .inherit,
+.inherit,
   a {
     text-decoration: inherit;
   }
@@ -118,15 +118,10 @@
   }
   a:focus {
     outline: 0;
-  }
-
-.primary{
-  padding-left: 2%;
-  margin-top: 2px;
-  margin-bottom: 2px;
 }
 
-li{
-  list-style: none;;
-  margin: 0;
+.content{
+  padding-left: 20px;
 }
+
+

@@ -3,7 +3,7 @@ function $(elid) {
     return document.getElementById(elid);
 }
   
-// curser stylewhen window is loaded 
+// curser style when window is loaded 
 var cursor;
 window.onload = init;
 
@@ -32,7 +32,3 @@ function moveIt(count, e) {
     cursor.style.left = parseInt(cursor.style.left) + 10 + "px";
   }
 }
-
-// function alert(txt) {
-//   console.log(txt);
-// }

@@ -21,14 +21,3 @@ The commands [
 
 ]
 
-# Loader 
-
-a simple three dots after loading (loading...)
-dots light up one by one 
-once the dots have light up 
-load
-
-<!-- scroll up when enter -->
-
-
-# Gamification

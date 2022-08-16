@@ -1,15 +1,11 @@
 window.onload = displayBanner;
 
-var before = document.getElementById("before");
-var liner = document.getElementById("liner");
 var command = document.getElementById("typer"); 
 var textarea = document.getElementById("texter"); 
-var terminal = document.getElementById("terminal");
 var chl = 0;
-var commandHistory = [];
 
 
-window.addEventListener("keyup", enterKey);
+window.addEventListener("keyup", keyManager);
 textarea.value = "";
 command.innerHTML = textarea.value;
 
@@ -19,14 +15,14 @@ command.innerHTML = textarea.value;
  * Running terminal update : key interaction
  * 
  */
-function enterKey(e) {
+function keyManager(e) {
   if (e.keyCode == 181) {
     document.location.reload(true);
   }
   if (e.keyCode == 13) {
     commandHistory.push(command.innerHTML);
     chl = commandHistory.length;
-    addLine("visitor@ns_terminal:~$" + command.innerHTML, "no-animation", 0);
+    addLine("visitor@ns_terminal:~$" + command.innerHTML,'no-animation', 0);
     commands(command.innerHTML.toLowerCase());
     command.innerHTML = "";
     textarea.value = "";
@@ -47,61 +43,57 @@ function enterKey(e) {
   }
 }
 
-
 /**
  * Command usage
  * @param {*} e 
  * Running terminal update : commands added to history
- * 
  */
 
 function commands(cmd) {
   switch (cmd.toLowerCase()){
     case'help':
-    loopLines(help, 'primary', 80);
-      help;
+    loopLines(help, 80);
       break;
     case 'about':
-      loopLines(about, 'primary',80);
-      about;
+      loopLines(about,80);
       break;
     case 'git':
-      loopLines(gitbio, 'primary ', 80);
-      addLine("> Opening Git...", 'primary ', 200);
+      loopLines(gitbio, 80);
+      addLine("> Opening Git...", 200);
       newTab('https://github.com/NiamhSpingies');
       break;
     case 'email':
-      addLine("> Opening email...", 'primary', 0);
+      addLine("> Opening email...", 'primary', 80);
       newTab('mailto:niamhspingies@gmail.com');
       break;
-    case "history":
-      loopLines(commandHistory, 'primary', 80);
+    case 'history':
+      loopLines(commandHistory,'content',80);
       break;
     case '-cv':
-      addLine("> Downloading Niamh Spingies CV...",'primary', 0);
-      newTab( 'https://www.linkedin.com/in/niamh-spingies/');
+      addLine("> Downloading Niamh Spingies CV...", 80);
+      newTab('https://www.linkedin.com/in/niamh-spingies/');
       download('media/niamhspingies.pdf');
       break;
-    case "clear":
+    case 'clear':
       setTimeout(function() {
         displayBanner();
-        terminal.innerHTML = '<a id="before"></a>';
-        before = document.getElementById("before");
+        getElement("terminal").innerHTML = '<a id="before"></a>';
+        getElement("before");
       }, 1);
       break;
     case'theme':
-      loopLines(theme, 'primary', 80);
+      loopLines(theme, 80);
       break;
     case'dark':
-      addLine("...Loading DarkTheme",'primary', 0);
+      addLine("...Loading DarkTheme", 0);
       themeHandler("");
       break;
     case'midnight':
-      addLine("...Loading MidnightTheme",'primary', 0);
+      addLine("...Loading MidnightTheme", 0);
       themeHandler("midnightTheme");
       break;
     default:
-      loopLines(error,'primary', 100);
+      loopLines(error, 100);
       break;
   }
 }
@@ -124,8 +116,8 @@ function addLine(text,style, time) {
     if (text.charAt(i) == " " && text.charAt(i + 1) == " ") {
       t += "&nbsp;&nbsp;";
       i++;
-    } else {  var style = "primary";
-
+    } else { 
+      // var style = "primary";
       t += text.charAt(i);
     }
   }
@@ -140,6 +132,7 @@ function addLine(text,style, time) {
 
 /*
 * Looping through lines in document or element
+* using addline
 */
 function loopLines(name,style,time) {
   name.forEach(function(item, index) {
@@ -159,8 +152,14 @@ function download(file){
 */
 function displayBanner(){
   setTimeout(function() {
-    loopLines(banner,"banner", 80);
+    loopLines(banner, 0);
     textarea.focus();
   }, 100);
 }
-
+/*
+* getting ID values 
+*/
+function getElement(element){
+  var value = document.getElementById(element)
+  return value;
+}

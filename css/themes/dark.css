@@ -4,12 +4,12 @@
     --back-color: #000000;
     --primary-color: #46526d;
     --secondary-color: #64ffda;
-    --curser-color: #73ABAD;
+    --curser-color: #84d6c3;
     --highlight-color: #46526d;
 }
 
 .terminalContainer{
-    color: var(--primary-color);
+    color: var(--secondary-color);
     background-color: var(--back-color);
 }
     
@@ -56,4 +56,8 @@ a:hover {
 
 #liner::before {
     color: var(--secondary-color);
+}
+
+.content{
+    color: var(--primary-color);
 }

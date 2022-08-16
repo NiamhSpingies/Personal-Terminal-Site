@@ -59,18 +59,18 @@ function commands(cmd) {
       break;
     case 'git':
       loopLines(gitbio, 80);
-      addLine("> Opening Git...", 200);
+      addLine("> Opening Git...",'content',200);
       newTab('https://github.com/NiamhSpingies');
       break;
     case 'email':
-      addLine("> Opening email...", 'primary', 80);
+      addLine("> Opening email...", 'content', 80);
       newTab('mailto:niamhspingies@gmail.com');
       break;
     case 'history':
       loopLines(commandHistory,'content',80);
       break;
     case '-cv':
-      addLine("> Downloading Niamh Spingies CV...", 80);
+      addLine("> Downloading Niamh Spingies CV...",'content', 80);
       newTab('https://www.linkedin.com/in/niamh-spingies/');
       download('media/niamhspingies.pdf');
       break;
@@ -85,11 +85,11 @@ function commands(cmd) {
       loopLines(theme, 80);
       break;
     case'dark':
-      addLine("...Loading DarkTheme", 0);
+      addLine("...Loading DarkTheme",'content', 0);
       themeHandler("");
       break;
     case'midnight':
-      addLine("...Loading MidnightTheme", 0);
+      addLine("...Loading MidnightTheme",'content', 0);
       themeHandler("midnightTheme");
       break;
     default:

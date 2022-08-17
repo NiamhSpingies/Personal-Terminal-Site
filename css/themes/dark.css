@@ -1,11 +1,17 @@
 /* DARK THEME SPECIFICATIONS */
-
+/*  
+dark blue 3E00FF
+seafoam green 248160
+medium blue 005F99
+light blue 3797A4
+*/
 :root {
     --back-color: #000000;
     --primary-color: #46526d;
-    --secondary-color: #64ffda;
-    --curser-color: #84d6c3;
+    --secondary-color: #08f7fe;
+    --curser-color: #1CD6CE;
     --highlight-color: #46526d;
+    --error-color: #3B9AE1;
 }
 
 .terminalContainer{
@@ -31,7 +37,7 @@
 }
 
 .banner{
-    color: var(--highlight-color);
+    color: var(--error-color);
 }
 
 .index {
@@ -60,4 +66,18 @@ a:hover {
 
 .content{
     color: var(--primary-color);
+}
+
+.error{
+    color: var(--error-color);
+}
+
+.about{
+    color: var(--primary-color);
+}
+.abouthead{
+    color: var(--secondary-color);
+}
+.aboutliner{
+    color: var(--error-color);
 }

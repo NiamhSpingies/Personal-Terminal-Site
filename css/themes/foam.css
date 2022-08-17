@@ -2,11 +2,12 @@
 
 
 :root {
-    --back-color: #06283D;
+    --back-color: #006A71;
     --primary-color: #F2EBE9;
-    --secondary-color: #5A8F7B;
+    --secondary-color: #80ED99 ;
     --curser-color: #46526d;
     --highlight-color: #000000;
+    --error-color:#6892D5;
 }
 
 .terminalContainer{
@@ -33,7 +34,6 @@
 
 .banner{
     color:#F2EBE9;    
-    font-size: medium;
 }
 
 .index {
@@ -45,17 +45,19 @@
 }
 
 a {
-    color: var(--secondary-color);
+    color: var(--error-color);
 }
 a:hover {
-    color: var(--secondary-color);
+    color: var(--error-color);
 } 
 
 ::selection {
     color: var(--hightlight-color);
     background:var(--secondary-color);
 }
-
 .content{
     color: var(--primary-color);
+}
+.error{
+    color: var(--error-color);
 }

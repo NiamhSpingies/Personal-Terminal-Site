@@ -16,8 +16,8 @@ command.innerHTML = textarea.value;
  * 
  */
 function keyManager(e) {
-  if (e.keyCode == 181) {
-    document.location.reload(true);
+  if (e.keyCode == 8) {
+    document.location.delete(true);
   }
   if (e.keyCode == 13) {
     commandHistory.push(command.innerHTML);
@@ -47,30 +47,31 @@ function keyManager(e) {
  * Command usage
  * @param {*} e 
  * Running terminal update : commands added to history
+ * make more flags and sub command
  */
 
 function commands(cmd) {
   switch (cmd.toLowerCase()){
-    case'help':
+    case'--help':
     loopLines(help, 80);
       break;
-    case 'about':
+    case 'stat -ns':
       loopLines(about,80);
       break;
-    case 'git':
+    case '--gitk':
       loopLines(gitbio, 80);
-      addLine("> Opening Git...",'content',200);
+      addLine("Opening Git..",'error',200);
       newTab('https://github.com/NiamhSpingies');
       break;
-    case 'email':
-      addLine("> Opening email...", 'content', 80);
+    case 'mail -ns':
+      addLine("Opening email..", 'error', 80);
       newTab('mailto:niamhspingies@gmail.com');
       break;
     case 'history':
       loopLines(commandHistory,'content',80);
       break;
-    case '-cv':
-      addLine("> Downloading Niamh Spingies CV...",'content', 80);
+    case 'cat >cv':
+      addLine("Downloading Niamh Spingies resume..",'error', 80);
       newTab('https://www.linkedin.com/in/niamh-spingies/');
       download('media/niamhspingies.pdf');
       break;
@@ -81,16 +82,14 @@ function commands(cmd) {
         getElement("before");
       }, 1);
       break;
-    case'theme':
-      loopLines(theme, 80);
-      break;
-    case'dark':
-      addLine("...Loading DarkTheme",'content', 0);
+    case'--dark':
+      loopLines(theme, 0);
+      addLine("DarkTheme {status : active} ",'error', 0);
       themeHandler("");
       break;
-    case'midnight':
-      addLine("...Loading MidnightTheme",'content', 0);
-      themeHandler("midnightTheme");
+    case'--foam':
+      addLine("SeaFoamTheme {status : active} ",'error', 0);
+      themeHandler("foam");
       break;
     default:
       loopLines(error, 100);
@@ -104,7 +103,7 @@ function commands(cmd) {
 function newTab(link) {
     setTimeout(function() {
       window.open(link, "_blank");
-    }, 1500);
+    }, 1300);
 }
 
 /*

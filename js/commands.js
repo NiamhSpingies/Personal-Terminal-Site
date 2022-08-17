@@ -7,7 +7,7 @@ help = [
     '<span class="content">--help                List of accepted commands</span>',
     '<span class="content">--gitk                View my coding projects</span>',
     '<span class="content">stat -ns              Who is Niamh?</span>',
-    '<span class="content">cat >cv               Checkout a hard copy of my resume</span>',
+    '<span class="content">cat -cv               Checkout a hard copy of my resume</span>',
     '<span class="content">history               Terminal session command history</span>',
     '<span class="content">clear                 Clear the terminal</span>',
     '<span class="content">mail -ns              Send me a direct email</span>',
@@ -26,7 +26,6 @@ about = [
     "<span class='aboutheader'>[uptime]</span><span class= 'about'>  8030h 01min</span> ",
     "<span class='aboutheader'>[packages]</span><span class='about'>5(python,java,html,css,js)</span> ",
     "<span class='aboutheader'>[lefttime]</span><span class='about'>2920h 0min</span> ",
-    "<br>"
 ];
 
 gitbio = [

@@ -70,8 +70,8 @@ function commands(cmd) {
     case 'history':
       loopLines(commandHistory,'content',80);
       break;
-    case 'cat >cv':
-      addLine("Downloading Niamh Spingies resume..",'error', 80);
+    case 'cat -cv':
+      addLine("Opening Niamh Spingies resume..",'error', 80);
       newTab('https://www.linkedin.com/in/niamh-spingies/');
       download('media/niamhspingies.pdf');
       break;

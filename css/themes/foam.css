@@ -61,3 +61,12 @@ a:hover {
 .error{
     color: var(--error-color);
 }
+.about{
+    color: var(--primary-color);
+}
+.abouthead{
+    color: var(--secondary-color);
+}
+.aboutliner{
+    color: var(--error-color);
+}
